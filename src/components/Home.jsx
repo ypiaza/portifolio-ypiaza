@@ -33,7 +33,7 @@ const Home = () => {
                         Bem vindos ao meu portifólio!
                     </h1>
                 </div>
-                <div className='w-1 h-1 bg-white'></div>
+                <div className='interative absolute bottom-5 left-[50%] w-3 h-3 bg-white animate-bounce'></div>
             </div>
         </div>
     );
