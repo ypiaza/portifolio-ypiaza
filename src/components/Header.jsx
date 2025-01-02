@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <div onMouseOver={() => setMenu(true)}
          onMouseOut={() => setMenu(false)} 
-         className={`cursor-pointer flex items-center justify-center fixed top-2 left-2 w-[5%] h-7 backdrop-blur-sm bg-blue-500/80 duration-300 rounded ${menu ? ' w-[50%] h-[6%] shadow-2xl shadow-blue-500/60' : ''}`}>
+         className={`cursor-pointer z-50 flex items-center justify-center fixed top-2 left-2 w-[5%] h-7 backdrop-blur-sm bg-cyan-500/80 duration-300 rounded ${menu ? ' w-[50%] h-[6%] shadow-2xl shadow-cyan-400/60' : ''}`}>
             <p className={`text-white font-bold ${menu ? 'hidden' : 'flex'}`}>ypiaza</p>
             <nav className={`w-full ${menu ? 'flex ' : 'hidden'}`}>
                 <ul className={`flex items-center justify-between w-full px-8 `}>

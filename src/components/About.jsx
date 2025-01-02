@@ -1,19 +1,18 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import Me from '../assets/me.jpg';
-import Bg from '../assets/bg.jpg'
 
 const About = () => {
   return (
-    <Parallax bgImage={Bg} strength={500}>
-      <div className="h-screen grid grid-cols-2 items-center">
+    <Parallax strength={500}>
+      <div className="h-screen grid grid-cols-2 items-center bg-gradient-to-r from-cyan-500 via-cyan-400 to-cyan-300">
         {/* Seção da Imagem */}
         <div
           className="flex items-center justify-center"
           data-aos="fade-left" // Animação AOS para saída pela esquerda
         >
           <img
-            className="w-[60%] rounded-full shadow-2xl border border-black/30"
+            className="w-[40%] rounded shadow-2xl border border-white/10"
             src={Me}
             alt="It's me!"
           />
@@ -21,7 +20,7 @@ const About = () => {
 
         {/* Seção de Texto */}
         <div
-          className="flex items-center justify-center p-10 font-medium text-gray-900"
+          className="flex items-center justify-center rounded p-10 font-medium bg-gray-200 backdrop-blur border border-white/30 text-gray-900 shadow-2xl"
           data-aos="fade-right" // Animação AOS para saída pela direita
         >
           <p>

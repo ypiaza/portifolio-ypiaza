@@ -13,10 +13,10 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="flex items-center justify-center h-screen w-full bg-gray-200 overflow-hidden relative">
+        <div className="flex items-center justify-center h-screen w-full bg-gray-200 overflow-hidden relative shadow-2xl">
             {/* Fundo de Parallax */}
             <div
-                className="absolute inset-0 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600"
+                className="absolute inset-0 "
                 style={{
                     transform: `translateY(${offsetY * 0.5}px)`,
                 }}
@@ -25,15 +25,18 @@ const Home = () => {
             <div className="z-10 text-center">
                 <div className="gap-1">
                     <h1
-                        className="text-3xl font-bold text-white"
+                        className="text-3xl font-extrabold bg-clip-text text-transparent"
                         style={{
                             transform: `translateY(${offsetY * 0.3}px)`,
+                            backgroundImage: "url('./src/assets/bg-text.jpg')",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
                         }}
                     >
                         Bem vindos ao meu portifólio!
                     </h1>
                 </div>
-                <div className='interative absolute bottom-5 left-[50%] w-3 h-3 bg-white animate-bounce'></div>
+                <div className='interative absolute bottom-5 left-[50%] w-3 h-3 bg-cyan-400 animate-bounce'></div>
             </div>
         </div>
     );
