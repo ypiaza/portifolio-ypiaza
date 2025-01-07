@@ -25,12 +25,9 @@ const Home = () => {
             <div className="z-10 text-center">
                 <div className="gap-1">
                     <h1
-                        className="text-3xl font-extrabold bg-clip-text text-transparent"
+                        className="text-3xl font-extrabold text-cyan-600"
                         style={{
                             transform: `translateY(${offsetY * 0.3}px)`,
-                            backgroundImage: "url('./src/assets/bg-text.jpg')",
-                            WebkitBackgroundClip: "text",
-                            WebkitTextFillColor: "transparent",
                         }}
                     >
                         Bem vindos ao meu portifólio!
